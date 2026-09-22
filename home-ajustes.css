@@ -1,0 +1,21 @@
+/* Página inicial: cards de urgência e blocos de conteúdo */
+.hero{min-height:760px;height:auto!important;padding-bottom:265px;overflow:visible!important;background:#fff}
+.hero-image{height:480px!important}.hero-copy{padding-top:82px}
+.hero-copy p,.happening-copy>p{font-size:16px!important;line-height:1.55!important}
+.hero-copy .btn{min-height:46px;height:auto;width:auto!important;padding:10px 16px;font-size:16px!important}
+.hero-copy .hero-actions{flex-wrap:wrap}
+.hero-pillars{height:auto!important;min-height:225px;bottom:20px!important;left:24px!important;right:24px!important;padding:22px 10px;box-shadow:0 14px 36px #1b372414}
+.pillar{text-align:left!important;padding:8px 15px}
+.pillar-icon{display:flex!important;align-items:center!important;justify-content:flex-start!important;margin-bottom:12px}
+.pillar-icon svg{width:42px;height:42px}.pillar h3{font-size:18px!important}.pillar p{font-size:16px!important}
+.urban-grid{gap:16px}.challenge-card{min-height:265px;padding:24px 18px;text-align:left!important}
+.challenge-icon{display:flex!important;align-items:center!important;justify-content:flex-start!important;margin:0 0 16px!important;height:48px}
+.challenge-icon svg{width:45px;height:45px}.challenge-card h3{font-size:20px!important}.challenge-card p{font-size:16px!important}
+.alert-card{width:min(270px,75%);min-height:160px}.alert-card h3{font-size:18px!important}
+.cta-bar{min-height:122px;grid-template-columns:45px 1.4fr 1fr 185px}.cta-button{min-height:46px;height:auto;font-size:16px}
+@media(max-width:1100px){.hero{padding-bottom:310px}}
+@media(max-width:800px){.hero{padding-bottom:0!important}.hero-pillars{left:auto!important;right:auto!important;bottom:auto!important;min-height:0!important}.challenge-card{min-height:235px}}
+@media(max-width:620px){.hero-pillars{grid-template-columns:1fr!important}.pillar{border:0!important;border-bottom:1px solid #e8eee8!important}.urban-grid{grid-template-columns:1fr!important}.challenge-card{min-height:0}}
+
+@media(max-width:800px){.hero{display:flex!important;flex-direction:column!important;height:auto!important}.hero-copy{padding:48px 24px 36px!important}.hero-image{height:340px!important;min-height:300px}.hero-image::before{display:none!important}.hero-pillars{position:relative!important;inset:auto!important;grid-template-columns:repeat(2,minmax(0,1fr))!important;margin:0 20px 28px!important;padding:18px!important}.pillar{text-align:left!important;padding:16px!important}}
+@media(max-width:620px){.hero h1{font-size:clamp(32px,8vw,42px)!important}}

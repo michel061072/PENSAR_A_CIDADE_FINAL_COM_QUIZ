@@ -1,0 +1,360 @@
+*{box-sizing:border-box}:root{--green:#244f36;--green-dark:#1f4b34;--text:#10120f;--cream:#f5f4ec}html{scroll-behavior:smooth}body{margin:0;background:#fff;color:var(--text);font-family:"DM Sans",Arial,sans-serif}img{display:block;width:100%;height:100%;object-fit:cover}.page{width:min(1040px,calc(100% - 32px));margin:auto}
+.header{height:64px;background:#fff;border-bottom:1px solid #ecece7}.header-inner{width:min(1040px,calc(100% - 32px));height:64px;margin:auto;display:grid;grid-template-columns:185px 1fr 145px;align-items:center;gap:20px}.brand{display:flex;align-items:center;gap:8px;color:#111;text-decoration:none;font-family:Georgia,serif;font-size:16px;white-space:nowrap}.brand svg{width:30px;height:40px;color:#56745d}.nav{display:flex;justify-content:center;align-items:center;gap:44px;height:100%}.nav a{position:relative;color:#151515;text-decoration:none;font-size:16px;padding:24px 0 20px}.nav a.active::after{content:"";position:absolute;left:0;right:0;bottom:12px;height:1px;background:#375840}.participate{width:137px;height:34px;justify-self:end;display:flex;align-items:center;justify-content:center;gap:9px;border-radius:20px;background:var(--green);color:#fff;text-decoration:none;font-size:16px}.menu-btn{display:none}
+.hero{position:relative;width:min(1040px,100%);height:620px;margin:auto;display:grid;grid-template-columns:36% 64%;overflow:hidden}.hero-copy{padding:83px 16px 0 28px;background:#fff;z-index:3}.eyebrow{display:block;margin-bottom:18px;color:#34583f;font-family:Georgia,serif;font-size:16px}.hero h1{margin:0 0 21px;font-size:38px;line-height:1.07;letter-spacing:-1.3px;font-weight:700}.hero-copy p{margin:0 0 25px;color:#252b25;font-size:16px;line-height:1.22}.hero-actions{display:flex;gap:18px}.btn{height:34px;display:flex;align-items:center;justify-content:center;border-radius:6px;text-decoration:none;font-size:16px}.btn.primary{width:143px;padding:0 12px;justify-content:space-between;background:#315c42;color:#fff}.btn.primary span{font-size:18px}.btn.secondary{width:94px;background:#f5f4ec;color:#27462f}.hero-image{position:relative;height:480px;overflow:hidden}.hero-image::before{content:"";position:absolute;z-index:2;left:-94px;top:-10px;width:170px;height:500px;background:#fff;border-radius:0 52% 52% 0 / 0 50% 50% 0}.hero-image img{object-position:center}.hero-pillars{position:absolute;z-index:10;left:52px;right:52px;bottom:20px;height:166px;display:grid;grid-template-columns:repeat(5,1fr);padding:18px 0;background:#fff;border-radius:28px;box-shadow:0 3px 14px rgba(0,0,0,.025)}.pillar{padding:4px 18px;text-align:center}.pillar+.pillar{border-left:1px solid #777}.pillar-icon{height:40px;display:grid;place-items:center;color:#6b8c70;font-size:30px}.pillar h3{margin:0 0 10px;font-size:16px;line-height:1.1}.pillar p{margin:0;color:#656960;font-size:16px;line-height:1.25}
+.happening{padding:50px 30px 36px;display:grid;grid-template-columns:44% 56%;gap:51px}.small-title{display:flex;align-items:center;gap:12px;margin-bottom:14px}.small-title span{font-family:monospace;font-size:16px;letter-spacing:.8px}.small-title i{display:block;width:70px;height:1px;background:#718377}.happening h2{margin:0 0 14px;font-family:"Playfair Display",Georgia,serif;font-size:25px;line-height:1.08;font-weight:400}.happening-copy>p{margin:0 0 16px;color:#7e8068;font-size:16px;line-height:1.24}.text-link{color:#5e765d;text-decoration:none;font-size:16px}.impact-media{position:relative;padding-top:8px}.impact-photo{height:248px;overflow:hidden;border-radius:18px}.alert-card{position:absolute;right:-2px;bottom:-18px;width:174px;min-height:142px;padding:18px 14px;display:grid;grid-template-columns:34px 1fr;gap:10px;border-radius:14px;background:#244f36;color:#fff}.alert-icon{font-size:29px;color:#dce4d5}.alert-card h3{margin:0 0 12px;font-size:16px;line-height:1.25}.alert-card p{margin:0;font-size:16px;line-height:1.3;color:#d5ddd4}
+.urban-challenges{padding:18px 20px 50px}.urban-title{margin-bottom:22px}.urban-title h2{margin:0;font-family:"Playfair Display",Georgia,serif;font-size:24px;line-height:1.06;font-weight:400}.urban-grid{display:grid;grid-template-columns:repeat(5,1fr);gap:22px}.challenge-card{min-height:165px;padding:15px 15px 16px;border-radius:17px;background:#f4f3e9}.challenge-icon{height:42px;color:#638169;font-size:29px}.challenge-card h3{margin:0 0 8px;font-size:16px;line-height:1.1}.challenge-card p{margin:0;color:#5e635b;font-size:16px;line-height:1.3}
+.cta-bar{min-height:70px;padding:11px 18px;display:grid;grid-template-columns:48px 1.4fr 1fr 140px;align-items:center;gap:14px;background:#efefe5;border-radius:13px 13px 0 0}.cta-leaf{font-size:32px;color:#617d68}.cta-main strong{font-size:16px;line-height:1.25}.cta-note{color:#555c54;font-size:16px;line-height:1.25}.cta-button{height:34px;display:flex;align-items:center;justify-content:space-between;padding:0 15px;border-radius:6px;background:#2f6342;color:#fff;text-decoration:none;font-size:16px}
+.footer{width:min(1040px,100%);margin:auto;padding:25px 44px 23px;background:#1f4b34;color:#fff;border-radius:18px 18px 0 0}.footer-grid{display:grid;grid-template-columns:1.3fr .8fr .9fr 1fr 1.3fr;gap:28px}.footer-brand h3{margin:0;font-size:16px;letter-spacing:2px}.footer-brand>span{font-size:16px}.footer-logo{font-size:30px}.footer-brand p{margin:12px 0;color:#e3e8e1;font-size:16px;line-height:1.35}.social{display:flex;gap:12px}.footer-col h4,.newsletter h4{margin:0 0 12px;font-size:16px}.footer-col a{display:block;margin-bottom:5px;color:#e3e8e1;text-decoration:none;font-size:16px}.footer-col p{margin:0 0 9px;color:#e3e8e1;font-size:16px;line-height:1.3}.newsletter{position:relative;min-height:114px;padding:18px;border-radius:17px;background:#b5c09d;color:#23442f}.newsletter p{font-size:16px}.newsletter button{position:absolute;right:16px;bottom:16px;width:31px;height:31px;border:0;border-radius:50%;background:#2b5a3d;color:#fff;font-size:18px}
+@media(max-width:800px){.header-inner{grid-template-columns:160px 1fr 115px}.nav{gap:20px}.hero{grid-template-columns:1fr;height:auto}.hero-copy{padding-bottom:40px}.hero-image{height:420px}.hero-image::before{display:none}.hero-pillars{position:relative;left:auto;right:auto;bottom:auto;height:auto;margin:0 20px 20px;grid-template-columns:repeat(2,1fr)}.pillar+.pillar{border-left:0}.happening{grid-template-columns:1fr}.urban-grid{grid-template-columns:repeat(2,1fr)}.footer-grid{grid-template-columns:repeat(2,1fr)}}
+@media(max-width:620px){.header-inner{display:flex;justify-content:space-between}.menu-btn{display:flex;flex-direction:column;gap:5px;border:0;background:none}.menu-btn span{width:24px;height:2px;background:var(--green)}.nav{display:none;position:absolute;top:64px;left:0;right:0;height:auto;padding:16px 24px;background:#fff;flex-direction:column;align-items:flex-start;z-index:50}.nav.open{display:flex}.participate{width:102px}.desktop{display:none}.hero h1{font-size:34px}.hero-pillars{grid-template-columns:1fr}.happening{padding-left:20px;padding-right:20px}.urban-grid{grid-template-columns:1fr}.cta-bar{grid-template-columns:1fr;text-align:center;border-radius:13px}.cta-leaf{display:none}.footer-grid{grid-template-columns:1fr}}
+
+
+/* ===== FIX DEFINITIVO DOS ÍCONES ===== */
+.site-logo-svg{
+  width:34px !important;
+  height:42px !important;
+  display:block !important;
+  flex:0 0 34px !important;
+  color:#4f7459 !important;
+}
+.wa-svg{
+  width:20px !important;
+  height:20px !important;
+  display:block !important;
+  flex:0 0 20px !important;
+  color:#fff !important;
+}
+.participate,
+.participar{
+  display:flex !important;
+  align-items:center !important;
+  justify-content:center !important;
+  gap:9px !important;
+}
+
+
+/* ===== FIX DEFINITIVO DA IMAGEM PRINCIPAL ===== */
+
+/* Mantém a foto nítida e sem camadas/brancos/borrões sobre ela */
+.hero-image{
+  position:relative !important;
+  height:480px !important;
+  overflow:hidden !important;
+  border-radius:0 !important;
+  clip-path:none !important;
+  background:transparent !important;
+}
+
+.hero-image::before{
+  content:"" !important;
+  display:block !important;
+  position:absolute !important;
+  z-index:3 !important;
+  left:-118px !important;
+  top:-12px !important;
+  width:220px !important;
+  height:505px !important;
+  background:#fff !important;
+  border-radius:0 58% 58% 0 / 0 50% 50% 0 !important;
+  filter:none !important;
+  opacity:1 !important;
+  box-shadow:none !important;
+}
+
+.hero-image::after{
+  display:none !important;
+  content:none !important;
+}
+
+.hero-image img{
+  position:static !important;
+  width:100% !important;
+  height:100% !important;
+  max-width:none !important;
+  object-fit:cover !important;
+  object-position:center center !important;
+  filter:none !important;
+  opacity:1 !important;
+  transform:none !important;
+  image-rendering:auto !important;
+}
+
+/* Home deve ficar ativa, não Quiz */
+.nav a.active::after{
+  content:"" !important;
+}
+
+
+/* ===== CONFERIDO: ÍCONES + FOTO SEM BORRÃO ===== */
+.site-logo-svg{
+  width:34px !important;
+  height:42px !important;
+  display:block !important;
+  color:#4f7459 !important;
+  flex:0 0 34px !important;
+}
+.wa-svg{
+  width:20px !important;
+  height:20px !important;
+  display:block !important;
+  color:#fff !important;
+  flex:0 0 20px !important;
+}
+.participate{
+  display:flex !important;
+  align-items:center !important;
+  justify-content:center !important;
+  gap:9px !important;
+}
+
+/* imagem principal: HD e sem filtro */
+.hero-image{
+  position:relative !important;
+  height:480px !important;
+  overflow:hidden !important;
+  background:transparent !important;
+}
+.hero-image img{
+  width:100% !important;
+  height:100% !important;
+  object-fit:cover !important;
+  object-position:center center !important;
+  filter:none !important;
+  opacity:1 !important;
+  transform:none !important;
+  image-rendering:auto !important;
+}
+
+/* curva branca sólida; nenhum blur/opacidade */
+.hero-image::before{
+  content:"" !important;
+  position:absolute !important;
+  z-index:2 !important;
+  left:-94px !important;
+  top:-10px !important;
+  width:170px !important;
+  height:500px !important;
+  background:#fff !important;
+  border-radius:0 52% 52% 0 / 0 50% 50% 0 !important;
+  filter:none !important;
+  opacity:1 !important;
+  box-shadow:none !important;
+}
+
+
+/* ===== AJUSTE VISUAL APÓS CONFERÊNCIA DO PRINT ===== */
+
+/* A curva anterior estava invadindo demais a fotografia.
+   Agora a foto ocupa corretamente o lado direito e a curva é estreita. */
+.hero-image{
+  position:relative !important;
+  height:480px !important;
+  overflow:hidden !important;
+  background:#fff !important;
+  border-radius:0 !important;
+  clip-path:none !important;
+}
+
+.hero-image::before{
+  content:"" !important;
+  display:block !important;
+  position:absolute !important;
+  z-index:4 !important;
+  left:-44px !important;
+  top:-12px !important;
+  width:92px !important;
+  height:510px !important;
+  background:#fff !important;
+  border-radius:0 78% 78% 0 / 0 48% 52% 0 !important;
+  filter:none !important;
+  opacity:1 !important;
+  box-shadow:none !important;
+}
+
+.hero-image::after{
+  display:none !important;
+  content:none !important;
+}
+
+.hero-image img{
+  position:absolute !important;
+  inset:0 !important;
+  width:100% !important;
+  height:100% !important;
+  object-fit:cover !important;
+  object-position:center center !important;
+  filter:none !important;
+  opacity:1 !important;
+  transform:none !important;
+}
+
+/* evita logo encostado/cortado na borda */
+.header-inner{
+  padding-left:22px !important;
+  padding-right:22px !important;
+}
+.brand{
+  min-width:185px !important;
+}
+.site-logo-svg{
+  width:30px !important;
+  height:38px !important;
+  overflow:visible !important;
+}
+
+
+/* ===== ÍCONES EXATOS ENVIADOS PELO USUÁRIO ===== */
+.site-logo-img{
+  width:31px !important;
+  height:40px !important;
+  object-fit:contain !important;
+  display:block !important;
+  flex:0 0 31px !important;
+}
+.wa-img{
+  width:21px !important;
+  height:22px !important;
+  object-fit:contain !important;
+  display:block !important;
+  flex:0 0 21px !important;
+}
+.participate,
+.participar{
+  display:flex !important;
+  align-items:center !important;
+  justify-content:center !important;
+  gap:9px !important;
+}
+
+
+/* ===== HOME: FOTO LIMPA E NÍTIDA ===== */
+.hero-image{
+  position:relative !important;
+  overflow:hidden !important;
+  background:#fff !important;
+}
+.hero-image::before{
+  content:"" !important;
+  position:absolute !important;
+  z-index:3 !important;
+  left:-48px !important;
+  top:-10px !important;
+  width:96px !important;
+  height:510px !important;
+  background:#fff !important;
+  border-radius:0 75% 75% 0 / 0 50% 50% 0 !important;
+  filter:none !important;
+  opacity:1 !important;
+  box-shadow:none !important;
+}
+.hero-image::after{
+  display:none !important;
+  content:none !important;
+}
+.hero-image img{
+  width:100% !important;
+  height:100% !important;
+  object-fit:cover !important;
+  object-position:center center !important;
+  filter:none !important;
+  opacity:1 !important;
+  transform:none !important;
+}
+
+/* ===== CABEÇALHO UNIFICADO - MESMO DA PÁGINA DESAFIOS ===== */
+.header{width:100%!important;height:auto!important;background:#fff!important;border-bottom:1px solid #ecece7!important;position:relative!important;top:auto!important;z-index:100!important;padding:0!important;}
+.header-inner{width:min(1040px,calc(100% - 32px))!important;height:64px!important;margin:0 auto!important;padding:0!important;display:grid!important;grid-template-columns:185px 1fr 145px!important;align-items:center!important;gap:20px!important;}
+.brand{display:flex!important;align-items:center!important;gap:8px!important;color:#111!important;text-decoration:none!important;font-family:Georgia,"Times New Roman",serif!important;font-size:16px!important;letter-spacing:0!important;white-space:nowrap!important;min-width:0!important;}
+.site-logo-img{width:31px!important;height:40px!important;object-fit:contain!important;display:block!important;flex:0 0 31px!important;margin:0!important;}
+.nav{height:100%!important;display:flex!important;align-items:center!important;justify-content:center!important;gap:44px!important;margin:0!important;padding:0!important;position:static!important;background:transparent!important;border:0!important;}
+.nav a{position:relative!important;display:block!important;height:auto!important;padding:24px 0 20px!important;color:#151515!important;text-decoration:none!important;font-size:16px!important;font-weight:400!important;white-space:nowrap!important;}
+.nav a.active::after{content:""!important;position:absolute!important;left:0!important;right:0!important;bottom:12px!important;height:1px!important;background:#375840!important;}
+.participate{width:137px!important;height:34px!important;justify-self:end!important;display:flex!important;align-items:center!important;justify-content:center!important;gap:9px!important;border-radius:20px!important;background:#244f36!important;color:#fff!important;text-decoration:none!important;font-size:16px!important;padding:0!important;margin:0!important;}
+.wa-img{width:21px!important;height:22px!important;object-fit:contain!important;display:block!important;flex:0 0 21px!important;margin:0!important;}
+.menu-btn{display:none!important;}
+@media(max-width:760px){.header-inner{display:flex!important;justify-content:space-between!important;height:64px!important}.menu-btn{display:flex!important;flex-direction:column!important;gap:5px!important;border:0!important;background:transparent!important}.menu-btn span{width:24px!important;height:2px!important;background:#244f36!important}.nav{display:none!important;position:absolute!important;top:64px!important;left:0!important;right:0!important;height:auto!important;background:#fff!important;flex-direction:column!important;align-items:flex-start!important;gap:0!important;padding:15px 24px!important;z-index:999!important}.nav.open{display:flex!important}.nav a{width:100%!important;padding:12px 0!important}.participate{width:105px!important}.brand span{font-size:16px!important}}
+
+/* IMAGENS NÍTIDAS */
+img{image-rendering:auto!important;}
+
+.hero-image img,.impact-photo img{filter:none!important;opacity:1!important;}
+
+
+/* ===== POLIMENTO FINAL DAS FOTOS ===== */
+img{
+  image-rendering:auto !important;
+}
+.hero-image,
+.hero-photo,
+.impact-photo,
+.flood-image,
+.quote-image,
+.bottom-photo,
+.people-photo,
+.ba-card{
+  background:#244f36 !important;
+}
+.hero-image img,
+.hero-photo img,
+.impact-photo img,
+.flood-image img,
+.quote-image img,
+.bottom-photo img,
+.people-photo img,
+.ba-card img{
+  filter:none !important;
+  opacity:1 !important;
+  transform:none !important;
+  object-fit:cover !important;
+}
+
+/* Home: curva sólida, sem transparência ou blur */
+.hero-image::before{
+  filter:none !important;
+  opacity:1 !important;
+  box-shadow:none !important;
+  background:#fff !important;
+}
+.impact-photo{
+  box-shadow:inset 0 0 0 1000px rgba(36,79,54,.04);
+}
+
+.newsletter-arrow{
+  position:absolute;
+  right:16px;
+  bottom:16px;
+  width:31px;
+  height:31px;
+  display:grid;
+  place-items:center;
+  border-radius:50%;
+  background:#2b5a3d;
+  color:#fff;
+  text-decoration:none;
+  font-size:18px;
+}
+
+/* acabamento sólido para esconder artefatos do recorte */
+.hero-image{background:#244f36 !important;}
+.hero-image::before{
+  background:#244f36 !important;
+  filter:none !important;
+  opacity:1 !important;
+  box-shadow:none !important;
+}
+.hero-copy{background:#fff !important;position:relative;z-index:5}
+.impact-photo{background:#244f36 !important}
+.impact-photo img{opacity:.90 !important}
+
+/* === CORREÇÃO FINAL: ÍCONES SVG + RECORTE DA FOTO SEM BORRÃO VERDE === */
+.icon-svg svg{width:31px;height:31px;fill:none;stroke:#6b8c70;stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round;display:block;margin:auto}
+.pillar-icon.icon-svg,.challenge-icon.icon-svg{display:grid;place-items:center}
+.hero-image{background:#fff!important;isolation:isolate!important}
+.hero-image::before{
+ content:""!important;display:block!important;position:absolute!important;z-index:4!important;
+ left:-112px!important;top:-8px!important;width:190px!important;height:500px!important;
+ background:#fff!important;border-radius:0 58% 58% 0 / 0 50% 50% 0!important;
+ filter:none!important;opacity:1!important;box-shadow:none!important;
+}
+.hero-image::after{display:none!important;content:none!important}
+.hero-image img{position:relative!important;z-index:1!important;filter:none!important;opacity:1!important}

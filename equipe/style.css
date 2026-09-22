@@ -1,0 +1,56 @@
+*{box-sizing:border-box}
+:root{--green:#245438;--green2:#6eab75;--cream:#eef0c5;--text:#090b09}
+body{margin:0;font-family:"DM Sans",Arial,sans-serif;color:var(--text);background:#fff}
+.header{height:64px;background:#fff;border-bottom:1px solid #ecece7}
+.header-inner{width:min(1040px,calc(100% - 32px));height:64px;margin:auto;display:grid;grid-template-columns:185px 1fr 145px;align-items:center;gap:20px}
+.brand{display:flex;align-items:center;gap:8px;text-decoration:none;color:#111;font:16px Georgia,serif;white-space:nowrap}
+.site-logo-img{width:31px;height:40px;object-fit:contain}
+.nav{display:flex;align-items:center;justify-content:center;gap:44px}.nav a{font-size:16px;color:#151515;text-decoration:none}
+.participate{height:34px;border-radius:20px;background:var(--green);color:#fff;text-decoration:none;display:flex;align-items:center;justify-content:center;gap:8px;font-size:16px}
+.wa-img{width:20px;height:20px;object-fit:contain}.menu-btn{display:none}
+
+.intro{text-align:center;padding:50px 20px 32px}
+.intro h1{margin:0;font-size:64px;line-height:.94;font-weight:500;letter-spacing:-2px}.intro h1 span{color:var(--green2);font-size:70px}
+.intro p{font-size:22px;margin:24px 0 0}
+
+.team-grid{width:min(990px,calc(100% - 32px));margin:0 auto;display:grid;grid-template-columns:repeat(6,1fr);gap:30px 24px;align-items:start}
+.member-card{background:var(--cream);border-radius:24px;min-height:310px;padding:13px 14px 9px;position:relative;overflow:hidden}
+.member-card:nth-child(1){grid-column:1/3}.member-card:nth-child(2){grid-column:3/5}.member-card:nth-child(3){grid-column:5/7}.member-card:nth-child(4){grid-column:2/4}.member-card:nth-child(5){grid-column:4/6}
+
+.member-photo{display:block;width:122px;height:122px;margin:0 auto 10px;border-radius:50%;object-fit:cover;object-position:center}
+.member-photo.anna{object-position:50% 42%}
+.member-photo.isadora{object-position:50% 46%}
+.member-photo.guilherme{object-position:50% 43%}
+.member-photo.arthur{object-position:50% 42%}
+.member-photo.michel{object-position:50% 45%}
+
+.member-card h2{font-size:20px;margin:0 0 2px;font-weight:600}
+.age{font-size:16px;display:flex;align-items:center;gap:5px}.age svg{width:17px;height:17px;fill:none;stroke:#101510;stroke-width:1.5;stroke-linecap:round;stroke-linejoin:round}
+.divider{height:1px;background:#c4c59f;margin:4px 0}
+.likes-title{font-size:16px;margin:0 0 4px}
+.member-card ul{list-style:none;margin:0;padding:0;font-size:16px;line-height:1.95}
+.member-card li{display:flex;align-items:center;gap:6px}
+.member-card li svg{width:17px;height:17px;flex:0 0 17px;fill:none;stroke:#101510;stroke-width:1.45;stroke-linecap:round;stroke-linejoin:round}
+.member-card small{display:block;text-align:center;margin-top:8px;font-size:16px}
+
+.final-banner{width:min(930px,calc(100% - 32px));margin:46px auto 25px;min-height:128px;background:var(--cream);border-radius:18px;display:grid;grid-template-columns:72px 1.15fr 1px 1.25fr;align-items:center;padding:12px 24px;gap:18px;overflow:hidden}
+.group-icon{width:62px;height:62px;background:#145b2c;border-radius:50%;display:grid;place-items:center}
+.group-icon svg{width:45px;height:45px;fill:none;stroke:#07140b;stroke-width:2.2;stroke-linecap:round;stroke-linejoin:round}
+.banner-copy h2{margin:0;color:#075828;font-size:28px;line-height:.9}
+.banner-copy p{font-size:16px;margin:5px 0 8px}
+.banner-copy a{width:220px;height:26px;border-radius:18px;background:#075828;color:#fff;text-decoration:none;display:flex;align-items:center;justify-content:space-between;padding:0 16px;font-size:16px}
+.banner-divider{width:1px;height:104px;background:#b4b58e}
+.banner-quote{position:relative;display:grid;grid-template-columns:34px 1fr;gap:10px;align-items:start;padding-left:2px}
+.quote-svg{width:30px;height:23px;fill:#075828}
+.banner-quote p{font-size:16px;line-height:1.2;margin:4px 0 0}
+
+@media(max-width:760px){
+  .header-inner{display:flex;justify-content:space-between}.nav{display:none}.menu-btn{display:flex;flex-direction:column;gap:5px;border:0;background:none}.menu-btn span{width:24px;height:2px;background:var(--green)}
+  .intro h1{font-size:45px}.intro h1 span{font-size:50px}.intro p{font-size:17px}
+  .team-grid{grid-template-columns:1fr 1fr}.member-card:nth-child(n){grid-column:auto}
+  .final-banner{grid-template-columns:70px 1fr;row-gap:16px}.banner-divider{display:none}.banner-quote{grid-column:1/3}
+}
+@media(max-width:480px){
+  .team-grid{grid-template-columns:1fr}.participate{width:100px}.brand span{display:none}
+  .final-banner{grid-template-columns:1fr;text-align:left}.group-icon{margin:auto}.banner-quote{grid-column:auto}.banner-copy a{width:100%}
+}

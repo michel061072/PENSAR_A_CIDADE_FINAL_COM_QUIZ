@@ -1,0 +1,697 @@
+*{box-sizing:border-box}
+:root{--green:#294f3b;--accent:#326744;--pale:#f0f0e8;--cream:#f8f7f1;--text:#10120f;--muted:#60655f}
+html{scroll-behavior:smooth}
+body{margin:0;background:#fff;color:var(--text);font-family:"DM Sans",Arial,sans-serif}
+img{display:block;width:100%;height:100%;object-fit:cover}
+.page{width:min(1040px,calc(100% - 32px));margin:auto}
+
+/* header */
+.header{height:64px;background:#fff;border-bottom:1px solid #eee}
+.header-inner{width:min(1040px,calc(100% - 32px));height:64px;margin:auto;display:grid;grid-template-columns:185px 1fr 145px;align-items:center;gap:20px}
+.brand{display:flex;align-items:center;gap:8px;color:#111;text-decoration:none;font:16px Georgia,serif;white-space:nowrap}
+.brand svg{width:30px;height:40px;color:#56745d}
+.nav{height:100%;display:flex;align-items:center;justify-content:center;gap:44px}
+.nav a{font-size:16px;color:#151515;text-decoration:none}
+.participate{justify-self:end;width:137px;height:34px;border-radius:20px;background:var(--green);color:#fff;text-decoration:none;display:flex;align-items:center;justify-content:center;gap:9px;font-size:16px}
+.menu-btn{display:none}
+
+/* hero */
+.vision-hero{width:min(1040px,100%);height:610px;margin:auto;position:relative;display:grid;grid-template-columns:50% 50%;grid-template-rows:455px 155px;overflow:hidden}
+.map-side{position:relative;background:#edf0ec;overflow:hidden}
+.map-pattern{position:absolute;inset:0;background:
+linear-gradient(31deg,transparent 45%,rgba(255,255,255,.95) 46%,rgba(255,255,255,.95) 50%,transparent 51%),
+linear-gradient(119deg,transparent 46%,rgba(255,255,255,.85) 47%,rgba(255,255,255,.85) 50%,transparent 51%),
+repeating-linear-gradient(18deg,rgba(189,200,193,.65) 0 3px,transparent 3px 25px),
+repeating-linear-gradient(102deg,rgba(190,200,193,.55) 0 2px,transparent 2px 31px);opacity:.85}
+.vision-card{position:absolute;left:29px;top:76px;width:304px;height:196px;padding:22px 24px;background:#fff;border-radius:28px}
+.leaf-circle{width:34px;height:34px;border:1px solid #819586;border-radius:50%;display:grid;place-items:center;color:#50705b;margin-bottom:10px}
+.vision-card h1{margin:0;font-size:32px;line-height:1.12;letter-spacing:-1px}
+.hero-photo{overflow:hidden}
+.hero-photo img{object-position:center}
+.principles{position:absolute;z-index:5;left:50px;right:59px;bottom:16px;height:154px;border-radius:28px;background:#fff;display:grid;grid-template-columns:repeat(3,1fr);padding:31px 0}
+.principles article{padding:12px 32px}
+.principles article+article{border-left:1px solid #777}
+.principles h3{margin:0 0 9px;font-size:17px}
+.principles p{margin:0;font-size:16px;line-height:1.35}
+
+/* presente */
+.present{padding:30px 58px 28px;display:grid;grid-template-columns:47% 53%;gap:70px}
+.label{display:block;color:#777;font-size:16px;margin-bottom:10px}
+.present h2{margin:0 0 17px;font-size:27px;line-height:1.08}
+.present h2 em{font-style:normal;color:#315f3e}
+.body-copy{width:340px;margin:0 0 15px;color:#5c615b;font-size:16px;line-height:1.25}
+.people-photo{position:relative;width:380px;height:196px;border-radius:27px;overflow:visible}
+.people-photo>img{border-radius:27px}
+.photo-note{position:absolute;left:-8px;bottom:-20px;width:208px;height:113px;border-radius:24px;background:#f6f5ef;padding:20px 14px 14px 67px;color:#aaa}
+.note-leaf{position:absolute;left:22px;top:21px;font-size:31px;color:#3f6c4c}
+.photo-note p{margin:0;font-size:16px;line-height:1.25}
+.current-challenges{padding-top:73px}
+.challenge-box{background:#faf9f6;border-radius:25px;padding:8px 14px}
+.challenge{min-height:67px;display:grid;grid-template-columns:52px 1fr;align-items:center}
+.challenge+.challenge{border-top:1px solid #d3d3cc}
+.icon{width:43px;height:43px;border-radius:13px;background:#e8ecd7;display:grid;place-items:center;color:#426348;font-size:23px}
+.challenge h3{margin:0 0 4px;font-size:16px;font-weight:500}
+.challenge p{margin:0;color:#747872;font-size:16px;line-height:1.2}
+
+/* numeros */
+.numbers{position:relative;margin-top:0;background:#f0f0e9;border-radius:25px;padding:34px 22px 17px}
+.numbers-label{position:absolute;left:22px;top:9px;font-size:16px;color:#777}
+.number-grid{display:grid;grid-template-columns:repeat(4,1fr)}
+.number-grid article{display:grid;grid-template-columns:48px 1fr;gap:9px;align-items:start;padding:0 20px}
+.number-grid article+article{border-left:1px solid #777}
+.num-icon{width:42px;height:42px;border-radius:50%;background:#e3e8d2;display:grid;place-items:center;color:#47654c;font-size:23px}
+.number-grid strong{display:block;color:#385c42;font-size:22px;font-weight:400;line-height:1.1}
+.number-grid p{margin:4px 0 0;color:#72766e;font-size:16px;line-height:1.2}
+
+/* antes/depois */
+.before-after{padding:13px 112px 23px;display:grid;grid-template-columns:1fr 1fr;gap:9px}
+.ba-card{position:relative;height:205px;overflow:hidden;border-radius:27px}
+.ba-card img{object-position:center}
+.ba-card:first-child img{filter:grayscale(100%) brightness(.68)}
+.ba-card::after{content:"";position:absolute;inset:0;background:linear-gradient(to bottom,rgba(0,0,0,.22),transparent 55%)}
+.ba-text{position:absolute;z-index:2;left:23px;top:23px;color:#fff}
+.ba-text h3{font-size:20px;margin:0 0 6px;text-decoration:underline}
+.ba-text p{font-size:16px;line-height:1.25;margin:0;font-weight:600}
+
+@media(max-width:760px){
+ .header-inner{display:flex;justify-content:space-between}.nav{display:none}.menu-btn{display:flex;flex-direction:column;gap:5px;border:0;background:none}.menu-btn span{width:24px;height:2px;background:var(--green)}
+ .vision-hero{height:auto;grid-template-columns:1fr;grid-template-rows:350px 350px auto}.vision-card{left:25px;top:60px}.principles{position:relative;left:auto;right:auto;bottom:auto;height:auto;border-radius:0;grid-template-columns:1fr;padding:20px}.principles article+article{border-left:0;border-top:1px solid #aaa}
+ .present{padding:30px 25px;grid-template-columns:1fr;gap:25px}.current-challenges{padding-top:0}.body-copy,.people-photo{width:100%}
+ .number-grid{grid-template-columns:1fr 1fr;gap:20px}.number-grid article+article{border-left:0}
+ .before-after{padding:15px;grid-template-columns:1fr}
+}
+
+
+/* =========================================================
+   CORREÇÃO: PILARES + ANTES/DEPOIS
+   ========================================================= */
+
+/* Dá mais altura ao hero para a caixa branca caber sem esmagar */
+.vision-hero{
+  height: 620px;
+  grid-template-rows: 455px 165px;
+}
+
+/* Caixa branca bem mais larga, como no Figma */
+.principles{
+  left: 20px !important;
+  right: 20px !important;
+  bottom: 12px !important;
+  height: 166px !important;
+
+  border-radius: 30px !important;
+  padding: 28px 0 !important;
+
+  grid-template-columns: 1fr 1fr 1fr !important;
+}
+
+/* Aumenta o espaço interno para as frases ficarem DENTRO */
+.principles article{
+  min-width: 0;
+  padding: 13px 42px !important;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.principles h3{
+  margin: 0 0 11px !important;
+  font-size: 16px !important;
+  line-height: 1.15 !important;
+  white-space: nowrap;
+}
+
+.principles p{
+  margin: 0 !important;
+  max-width: 240px;
+  font-size: 16px !important;
+  line-height: 1.35 !important;
+}
+
+/* Separadores verticais iguais à referência */
+.principles article + article{
+  border-left: 1px solid #777 !important;
+}
+
+/* ANTES / DEPOIS:
+   as novas fotos NÃO possuem texto embutido.
+   Assim o texto aparece somente uma vez pelo HTML. */
+.before-after{
+  padding: 13px 112px 24px !important;
+  gap: 9px !important;
+}
+
+.ba-card{
+  height: 205px !important;
+  border-radius: 27px !important;
+}
+
+.ba-card img{
+  width: 100% !important;
+  height: 100% !important;
+  object-fit: cover !important;
+  object-position: center !important;
+}
+
+.ba-card:first-child img{
+  filter: grayscale(100%) brightness(.68) !important;
+}
+
+.ba-text{
+  left: 23px !important;
+  top: 23px !important;
+}
+
+.ba-text h3{
+  margin: 0 0 7px !important;
+  font-size: 20px !important;
+  line-height: 1 !important;
+}
+
+.ba-text p{
+  margin: 0 !important;
+  font-size: 16px !important;
+  line-height: 1.25 !important;
+}
+
+@media(max-width:760px){
+  .vision-hero{
+    height:auto;
+  }
+
+  .principles{
+    left:auto !important;
+    right:auto !important;
+    bottom:auto !important;
+    height:auto !important;
+  }
+
+  .principles h3{
+    white-space:normal;
+  }
+
+  .principles article{
+    padding:20px !important;
+  }
+}
+
+
+/* ==========================================================
+   AJUSTE FINAL SOLICITADO
+   1. Antes/depois: foto sem palavras; texto só no HTML.
+   2. Caixa dos 3 pilares: mais baixa, larga e sobreposta
+      à divisão entre mapa e imagem como na referência.
+   ========================================================== */
+
+.vision-hero{
+  width: min(1040px,100%) !important;
+  height: 610px !important;
+  grid-template-columns: 50% 50% !important;
+  grid-template-rows: 455px 155px !important;
+  overflow: hidden !important;
+}
+
+/* caixa branca dos três itens */
+.principles{
+  left: 70px !important;
+  right: 70px !important;
+  bottom: 18px !important;
+  height: 150px !important;
+  padding: 24px 0 !important;
+  border-radius: 28px !important;
+  grid-template-columns: repeat(3,1fr) !important;
+  align-items: stretch !important;
+}
+
+.principles article{
+  padding: 12px 34px !important;
+  display: flex !important;
+  flex-direction: column !important;
+  justify-content: center !important;
+}
+
+.principles article + article{
+  border-left: 1px solid #777 !important;
+}
+
+.principles h3{
+  margin: 0 0 10px !important;
+  font-size: 16px !important;
+  line-height: 1.1 !important;
+  white-space: nowrap !important;
+}
+
+.principles p{
+  margin: 0 !important;
+  font-size: 16px !important;
+  line-height: 1.32 !important;
+  max-width: 220px !important;
+}
+
+/* Cards antes/depois */
+.before-after{
+  padding: 13px 112px 24px !important;
+  grid-template-columns: 1fr 1fr !important;
+  gap: 9px !important;
+}
+
+.ba-card{
+  position: relative !important;
+  height: 205px !important;
+  overflow: hidden !important;
+  border-radius: 27px !important;
+}
+
+.ba-card img{
+  position: absolute !important;
+  inset: 0 !important;
+  width: 100% !important;
+  height: 100% !important;
+  object-fit: cover !important;
+  object-position: center !important;
+}
+
+/* Antes continua preto e branco */
+.ba-card:first-child img{
+  filter: grayscale(100%) brightness(.68) !important;
+}
+
+/* Texto escrito pelo HTML UMA ÚNICA VEZ */
+.ba-text{
+  position: absolute !important;
+  z-index: 10 !important;
+  left: 23px !important;
+  top: 23px !important;
+  color: #fff !important;
+}
+
+.ba-text h3{
+  margin: 0 0 7px !important;
+  font-size: 20px !important;
+  line-height: 1 !important;
+  text-decoration: underline !important;
+}
+
+.ba-text p{
+  margin: 0 !important;
+  font-size: 16px !important;
+  line-height: 1.25 !important;
+  font-weight: 600 !important;
+}
+
+@media(max-width:760px){
+  .vision-hero{height:auto !important;}
+  .principles{
+    left:auto !important;
+    right:auto !important;
+    bottom:auto !important;
+    height:auto !important;
+  }
+  .principles h3{white-space:normal !important;}
+}
+
+
+/* =========================================================
+   FIX REAL - referência enviada pelo usuário
+   ========================================================= */
+
+/* HERO com a caixa branca SOBRE as duas imagens */
+.vision-hero{
+  width:min(1040px,100%) !important;
+  height:610px !important;
+  display:grid !important;
+  grid-template-columns:50% 50% !important;
+  grid-template-rows:455px 155px !important;
+  position:relative !important;
+  overflow:hidden !important;
+}
+
+/* A caixa começa ainda dentro das imagens e atravessa mapa + foto */
+.principles{
+  position:absolute !important;
+  z-index:20 !important;
+
+  left:50px !important;
+  right:50px !important;
+
+  top:390px !important;
+  bottom:auto !important;
+
+  width:auto !important;
+  height:150px !important;
+
+  display:grid !important;
+  grid-template-columns:repeat(3,1fr) !important;
+
+  padding:24px 0 !important;
+  margin:0 !important;
+
+  background:#fff !important;
+  border-radius:28px !important;
+}
+
+.principles article{
+  padding:10px 34px !important;
+  display:flex !important;
+  flex-direction:column !important;
+  justify-content:center !important;
+  min-width:0 !important;
+}
+
+.principles article + article{
+  border-left:1px solid #777 !important;
+}
+
+.principles h3{
+  margin:0 0 10px !important;
+  font-size:16px !important;
+  line-height:1.1 !important;
+  white-space:nowrap !important;
+}
+
+.principles p{
+  margin:0 !important;
+  font-size:16px !important;
+  line-height:1.35 !important;
+  max-width:230px !important;
+}
+
+/* ANTES/DEPOIS: o JPG agora é SOMENTE FOTO.
+   As palavras abaixo são exclusivamente HTML. */
+.ba-card{
+  position:relative !important;
+  height:205px !important;
+  overflow:hidden !important;
+  border-radius:27px !important;
+  background:#222 !important;
+}
+
+.ba-card img{
+  position:absolute !important;
+  inset:0 !important;
+  width:100% !important;
+  height:100% !important;
+  object-fit:cover !important;
+  object-position:center !important;
+}
+
+.ba-card:first-child img{
+  filter:grayscale(100%) brightness(.68) !important;
+}
+
+.ba-text{
+  position:absolute !important;
+  z-index:30 !important;
+  left:23px !important;
+  top:23px !important;
+  color:#fff !important;
+}
+
+.ba-text h3{
+  margin:0 0 7px !important;
+  font-size:20px !important;
+  line-height:1 !important;
+  text-decoration:underline !important;
+}
+
+.ba-text p{
+  margin:0 !important;
+  font-size:16px !important;
+  line-height:1.25 !important;
+  font-weight:600 !important;
+}
+
+@media(max-width:760px){
+  .vision-hero{height:auto !important;display:block !important;}
+  .principles{
+    position:relative !important;
+    left:auto !important;right:auto !important;top:auto !important;
+    height:auto !important;
+    border-radius:0 !important;
+    grid-template-columns:1fr !important;
+  }
+  .principles h3{white-space:normal !important;}
+  .principles article + article{border-left:0 !important;border-top:1px solid #aaa !important;}
+}
+
+
+/* =========================================================
+   AJUSTE DO HERO — TEXTOS DENTRO DAS IMAGENS
+   ========================================================= */
+
+/* aumenta a área visual do topo */
+.vision-hero{
+  width:min(1040px,100%) !important;
+  height:620px !important;
+  position:relative !important;
+
+  display:grid !important;
+  grid-template-columns:50% 50% !important;
+  grid-template-rows:620px !important;
+
+  overflow:hidden !important;
+}
+
+/* mapa e foto agora descem até o final do hero */
+.map-side,
+.hero-photo{
+  height:620px !important;
+  min-height:620px !important;
+}
+
+/* imagem da direita esticada para baixo */
+.hero-photo img{
+  width:100% !important;
+  height:100% !important;
+
+  object-fit:cover !important;
+  object-position:center center !important;
+}
+
+/* caixa branca fica POR CIMA das imagens, não abaixo */
+.principles{
+  position:absolute !important;
+  z-index:30 !important;
+
+  left:70px !important;
+  right:70px !important;
+
+  top:auto !important;
+  bottom:26px !important;
+
+  width:auto !important;
+  height:150px !important;
+
+  display:grid !important;
+  grid-template-columns:repeat(3,1fr) !important;
+
+  padding:24px 0 !important;
+  margin:0 !important;
+
+  background:#fff !important;
+
+  border-radius:28px !important;
+
+  box-shadow:0 3px 12px rgba(0,0,0,.03) !important;
+}
+
+/* conteúdo centralizado dentro da caixa */
+.principles article{
+  padding:10px 34px !important;
+
+  display:flex !important;
+  flex-direction:column !important;
+  justify-content:center !important;
+
+  min-width:0 !important;
+}
+
+.principles article + article{
+  border-left:1px solid #777 !important;
+}
+
+.principles h3{
+  margin:0 0 10px !important;
+
+  font-size:16px !important;
+  line-height:1.1 !important;
+
+  white-space:nowrap !important;
+}
+
+.principles p{
+  margin:0 !important;
+
+  max-width:230px !important;
+
+  font-size:16px !important;
+  line-height:1.35 !important;
+}
+
+/* a seção seguinte começa só depois do hero completo */
+.present{
+  margin-top:0 !important;
+}
+
+/* mobile */
+@media(max-width:760px){
+
+  .vision-hero{
+    height:auto !important;
+    display:block !important;
+  }
+
+  .map-side,
+  .hero-photo{
+    height:350px !important;
+    min-height:350px !important;
+  }
+
+  .principles{
+    position:relative !important;
+
+    left:auto !important;
+    right:auto !important;
+    bottom:auto !important;
+
+    height:auto !important;
+
+    grid-template-columns:1fr !important;
+
+    border-radius:0 !important;
+  }
+
+  .principles h3{
+    white-space:normal !important;
+  }
+
+  .principles article + article{
+    border-left:0 !important;
+    border-top:1px solid #aaa !important;
+  }
+}
+
+
+/* ===== FIX DEFINITIVO DOS ÍCONES ===== */
+.site-logo-svg{
+  width:34px !important;
+  height:42px !important;
+  display:block !important;
+  flex:0 0 34px !important;
+  color:#4f7459 !important;
+}
+.wa-svg{
+  width:20px !important;
+  height:20px !important;
+  display:block !important;
+  flex:0 0 20px !important;
+  color:#fff !important;
+}
+.participate,
+.participar{
+  display:flex !important;
+  align-items:center !important;
+  justify-content:center !important;
+  gap:9px !important;
+}
+
+
+/* ===== CABEÇALHO CONFERIDO ===== */
+.header-inner{
+  padding-left:22px !important;
+  padding-right:22px !important;
+}
+.site-logo-svg{
+  width:30px !important;
+  height:38px !important;
+  overflow:visible !important;
+}
+.wa-svg{
+  width:19px !important;
+  height:19px !important;
+  overflow:visible !important;
+}
+
+
+/* ===== ÍCONES EXATOS ENVIADOS PELO USUÁRIO ===== */
+.site-logo-img{
+  width:31px !important;
+  height:40px !important;
+  object-fit:contain !important;
+  display:block !important;
+  flex:0 0 31px !important;
+}
+.wa-img{
+  width:21px !important;
+  height:22px !important;
+  object-fit:contain !important;
+  display:block !important;
+  flex:0 0 21px !important;
+}
+.participate,
+.participar{
+  display:flex !important;
+  align-items:center !important;
+  justify-content:center !important;
+  gap:9px !important;
+}
+
+/* ===== CABEÇALHO UNIFICADO - MESMO DA PÁGINA DESAFIOS ===== */
+.header{width:100%!important;height:auto!important;background:#fff!important;border-bottom:1px solid #ecece7!important;position:relative!important;top:auto!important;z-index:100!important;padding:0!important;}
+.header-inner{width:min(1040px,calc(100% - 32px))!important;height:64px!important;margin:0 auto!important;padding:0!important;display:grid!important;grid-template-columns:185px 1fr 145px!important;align-items:center!important;gap:20px!important;}
+.brand{display:flex!important;align-items:center!important;gap:8px!important;color:#111!important;text-decoration:none!important;font-family:Georgia,"Times New Roman",serif!important;font-size:16px!important;letter-spacing:0!important;white-space:nowrap!important;min-width:0!important;}
+.site-logo-img{width:31px!important;height:40px!important;object-fit:contain!important;display:block!important;flex:0 0 31px!important;margin:0!important;}
+.nav{height:100%!important;display:flex!important;align-items:center!important;justify-content:center!important;gap:44px!important;margin:0!important;padding:0!important;position:static!important;background:transparent!important;border:0!important;}
+.nav a{position:relative!important;display:block!important;height:auto!important;padding:24px 0 20px!important;color:#151515!important;text-decoration:none!important;font-size:16px!important;font-weight:400!important;white-space:nowrap!important;}
+.nav a.active::after{content:""!important;position:absolute!important;left:0!important;right:0!important;bottom:12px!important;height:1px!important;background:#375840!important;}
+.participate{width:137px!important;height:34px!important;justify-self:end!important;display:flex!important;align-items:center!important;justify-content:center!important;gap:9px!important;border-radius:20px!important;background:#244f36!important;color:#fff!important;text-decoration:none!important;font-size:16px!important;padding:0!important;margin:0!important;}
+.wa-img{width:21px!important;height:22px!important;object-fit:contain!important;display:block!important;flex:0 0 21px!important;margin:0!important;}
+.menu-btn{display:none!important;}
+@media(max-width:760px){.header-inner{display:flex!important;justify-content:space-between!important;height:64px!important}.menu-btn{display:flex!important;flex-direction:column!important;gap:5px!important;border:0!important;background:transparent!important}.menu-btn span{width:24px!important;height:2px!important;background:#244f36!important}.nav{display:none!important;position:absolute!important;top:64px!important;left:0!important;right:0!important;height:auto!important;background:#fff!important;flex-direction:column!important;align-items:flex-start!important;gap:0!important;padding:15px 24px!important;z-index:999!important}.nav.open{display:flex!important}.nav a{width:100%!important;padding:12px 0!important}.participate{width:105px!important}.brand span{font-size:16px!important}}
+
+/* IMAGENS NÍTIDAS */
+img{image-rendering:auto!important;}
+
+
+/* ===== POLIMENTO FINAL DAS FOTOS ===== */
+img{
+  image-rendering:auto !important;
+}
+.hero-image,
+.hero-photo,
+.impact-photo,
+.flood-image,
+.quote-image,
+.bottom-photo,
+.people-photo,
+.ba-card{
+  background:#244f36 !important;
+}
+.hero-image img,
+.hero-photo img,
+.impact-photo img,
+.flood-image img,
+.quote-image img,
+.bottom-photo img,
+.people-photo img,
+.ba-card img{
+  filter:none !important;
+  opacity:1 !important;
+  transform:none !important;
+  object-fit:cover !important;
+}
+
+.newsletter-arrow{
+  position:absolute;
+  right:16px;
+  bottom:16px;
+  width:31px;
+  height:31px;
+  display:grid;
+  place-items:center;
+  border-radius:50%;
+  background:#2b5a3d;
+  color:#fff;
+  text-decoration:none;
+  font-size:18px;
+}
